@@ -1,9 +1,10 @@
-.logo{
-    margin-left: 20px;
-    margin-top: 10px;
-    max-height: 5vh;
-    transition: ease-in 0.3s all;
+.logo {
+  position: fixed;
+  left: 20px;
+  top: 2.5vh;
+  max-height: 5vh;
+  transition: ease-in 0.3s all;
 }
-.logo:hover{
-    transform: scale(1.1);
+.logo:hover {
+  transform: scale(1.1);
 }

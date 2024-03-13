@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+header {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 10vh;
+  border-bottom: 1px solid purple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 90vh;
+}
+header h1 {
+  margin: 0;
+}
+.container-left {
+  width: 33vw;
+  max-height: 100%;
+  border: 1px solid purple;
+  margin: 10px 5px 10px 10px;
+  padding: 10px;
+}
+.container {
+  width: 100%;
+  max-height: 100%;
+  border: 1px solid purple;
+  margin: 10px 10px 10px 5px;
+  padding: 10px;
+}
+.flex {
+  display: flex;
+}
