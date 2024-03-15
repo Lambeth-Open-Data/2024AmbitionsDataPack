@@ -1,7 +1,5 @@
 .logo {
-  position: fixed;
-  left: 20px;
-  top: 2.5vh;
+  margin-left: 20px;
   max-height: 5vh;
   transition: ease-in 0.3s all;
 }

@@ -9,20 +9,16 @@
     <link rel="stylesheet" href="/Styles/typography.css" />
     <link rel="stylesheet" href="/Styles/menu.css" />
     <link rel="stylesheet" href="/Styles/layout.css">
+    <link rel="stylesheet" href="/Styles/grid.css">
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
   </head>
   <body>
-    <!-- Page Header -->
+   <!-- Page Header -->
     <header>
-      <a href="/DataPacksHTML.html"
-        ><img
-          class="logo"
-          src="/Images/Lambeth-logo.png"
-          alt="Lambeth Council logo"
-      /></a>
-
-      <!-- Page Title-->
-      <h1 class="lambeth-blue">Lambeth Data Packs 2024</h1>
+      <!-- The displayHeader() function outputs the header -->
     </header>
 
     <main class="flex">
@@ -124,23 +120,66 @@
           </div>
         </div>
       </div>
-      <div class="container">
-        <a href="/DataPacksHTML.html">Home / </a>
-        <a href="/DataTemplate.html">Ambition 1 </a>
-        <div class="flex">
-            <div>
-                <h2>Introduction to Health Data</h2>
-            </div>
-            <div>
+      <div class="container" style="border: none;">
+        <div>
+          <a href="/index.html">Home / </a>
+          <a href="/DataTemplate.html?ambition=1">Ambition 1 </a>
+          <h2>Health Intro</h2>
+        </div>
 
-            </div>
-        </div>
-        <div class="flex">
+        <div id="root"></div>
 
-        </div>
-        </div>
+
+
+      </div>
       </div>
     </main>
     <script src="/Scripts/menu.js"></script>
+     <script type="text/babel">
+      function GridExample() {
+        return (
+          <div className="grid-container">
+            <div
+              className="grid-item"
+              style={{ gridColumn: "span 2", gridRow: "span 4" }}
+            >
+              <h2>Introduction</h2>
+            </div>
+            <div
+              className="grid-item"
+              style={{ gridColumn: "span 1", gridRow: "span 4" }}
+            >
+              <h2>Key Takeaways</h2>
+            </div>
+            <div
+              className="grid-item"
+              style={{ gridColumn: "span 1", gridRow: "span 1" }}
+            >
+              <h2>Facts</h2>
+            </div>
+               <div
+              className="grid-item"
+              style={{ gridColumn: "span 1", gridRow: "span 1" }}
+            >
+              <h2>Facts</h2>
+            </div>
+            <div
+              className="grid-item"
+              style={{ gridColumn: "span 1", gridRow: "span 1" }}
+            >
+              <h2>Facts</h2>
+            </div>
+         
+            
+          </div>
+        );
+      }
+
+      ReactDOM.render(<GridExample />, document.getElementById("root"));
+    </script>
+    <script src="/Scripts/header.js"></script>
+    <script>
+      displayHeader();
+    </script>
   </body>
 </html>

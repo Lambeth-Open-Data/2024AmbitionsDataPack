@@ -7,6 +7,7 @@ body {
   overflow: hidden;
 }
 header {
+  background-color: #212c61;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,7 +15,23 @@ header {
   border-bottom: 1px solid purple;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  position: relative;
+}
+header button {
+  font-size: large;
+  height: 10vh;
+  margin-right: 20px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 4px;
+  cursor: pointer;
+  transition: ease-in all 0.2s;
+}
+header button:hover {
+  color: #faa71c;
+  background-color: transparent;
 }
 main {
   margin: 0;
