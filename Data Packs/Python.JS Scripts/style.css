@@ -1,0 +1,81 @@
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+}
+
+.autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+}
+
+.autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+}
+
+#sliderContainer {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    margin: 20px 0;
+}
+
+#ageSlider {
+    margin: 0 10px;
+    width: 200px;
+}
+
+#lineGraph {
+    width: 800px;
+    height: 400px;
+}
+
+.barsMale {
+    fill: steelblue;
+}
+.barsFemale {
+    fill: pink;
+}
+.axis-label {
+    font: 12px sans-serif;
+    text-anchor: center;
+}
+.axis text {
+    text-anchor: middle;
+}
+.tooltip {
+    position: absolute;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 8px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+.pie-chart text {
+    font: 12px sans-serif;
+    text-anchor: middle;
+}
+.pie-chart .arc path {
+    stroke: #fff;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Combined Population Visualizations</title>
+    <!-- Scripts and Styles from d3linegraph.html -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.1/nouislider.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.1/nouislider.min.css" rel="stylesheet">
+    <!-- Scripts and Styles from d3sexpoppyramid.html -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Link to external CSS file -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Population by Age and Area</h1>
+    <div class="autocomplete" style="width:300px;">
+        <input id="areaInput" type="text" name="area" placeholder="Select area">
+    </div>
+    <br>
+    <label for="ageRange">Select Age Range:</label>
+    <div id="sliderContainer">
+        <input type="number" id="minAgeInput" value="0" min="0" max="90" step="1" oninput="updateSliderFromInput()">
+        <div id="ageSlider"></div>
+        <input type="number" id="maxAgeInput" value="90" min="0" max="90" step="1" oninput="updateSliderFromInput()">
+    </div>
+    <span id="ageRangeLabel">0 - 90</span>
+    <br>
+    <div id="tooltip" style="position: absolute; opacity: 0; background-color: white; border: 1px solid #d4d4d4; padding: 5px; pointer-events: none;"></div>
+    <svg id="lineGraph" width="800" height="400"></svg>
+
+    <h2>Select Ward:</h2>
+    <div class="autocomplete" style="width: 300px;">
+        <input id="wardInput" type="text" name="ward" placeholder="Enter Ward Name">
+    </div>
+    <br/><br/>
+    <svg id="pyramid" width="800" height="400"></svg>
+    <svg id="pie" width="400" height="400"></svg>
+
+    <!-- Link external JavaScript files -->
+    <script src="d3linegraph.js"></script>
+    <script src="d3sexpoppyramid.js"></script>
+</body>
+</html>
